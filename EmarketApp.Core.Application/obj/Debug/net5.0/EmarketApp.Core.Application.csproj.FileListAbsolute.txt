@@ -1,0 +1,15 @@
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\bin\Debug\net5.0\EmarketApp.Core.Application.deps.json
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\bin\Debug\net5.0\EmarketApp.Core.Application.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\bin\Debug\net5.0\ref\EmarketApp.Core.Application.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\bin\Debug\net5.0\EmarketApp.Core.Application.pdb
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\bin\Debug\net5.0\EmarketApp.Core.Domain.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\bin\Debug\net5.0\EmarketApp.Core.Domain.pdb
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\EmarketApp.Core.Application.csproj.AssemblyReference.cache
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\EmarketApp.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\EmarketApp.Core.Application.AssemblyInfoInputs.cache
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\EmarketApp.Core.Application.AssemblyInfo.cs
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\EmarketApp.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\EmarketApp.Core.Application.csproj.CopyComplete
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\EmarketApp.Core.Application.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\ref\EmarketApp.Core.Application.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\EmarketApp.Core.Application\obj\Debug\net5.0\EmarketApp.Core.Application.pdb

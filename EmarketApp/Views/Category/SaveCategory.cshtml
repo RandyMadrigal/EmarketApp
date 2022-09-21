@@ -1,0 +1,56 @@
+﻿@using EmarketApp.Core.Application.ViewModels.Categories;
+
+@model SaveCategoryVm;
+
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = "Editar Categorias";
+}
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 offset-3 my-5">
+
+            <div class="card bg-dark bg-opacity-25 text-light">
+
+                <div class="card-header bg-dark text-white text-center rounded-end rounded-start">
+                    <h3> @(editMode ? $"Editar Categoria: {Model.Name}" : "Crear nueva categoria")</h3>
+                </div>
+
+                <form method="post" asp-controller="Category" asp-action="@(editMode ? "Edit":"Create" )">
+
+                    <div class="card-body">
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Nombre de la categoria: </label>
+                            <input asp-for="Name" type="text" class="form-control">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Descripcion: </label>
+                            <textarea asp-for="Description" class="form-control" placeholder="Breve descripcion de la categoria"> </textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-2">
+
+                        <a asp-controller="Category" asp-action="Index"
+                           class="btn btn-danger float-end mx-3 mb-2">volver atras</a>
+
+                        <button type="submit" class="btn btn-primary float-end mb-2">Guardar</button>
+
+                    </div>
+
+                    <input type="hidden" asp-for="Id" />
+
+                </form>
+
+            </div>
+            </div>
+        </div>
+    </div>
+

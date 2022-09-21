@@ -1,0 +1,39 @@
+﻿@using EmarketApp.Core.Application.ViewModels.Anuncios;
+
+@model SaveAnuncioVm;
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<div class="container my-5">
+    <div class="row">
+
+        <div class="col-md-6 offset-3 my-5">
+
+            <div class="card bg-dark border border-danger">
+                <div class="card-header bg-dark text-white text-center rounded-end ">
+                    <h3> ¿Deseas eliminar el anuncio  "@Model.Name" ? </h3>
+                </div>
+
+                <div class="card-body">
+
+                    <form method="post" asp-controller="Anuncios" asp-action="DeletePost">
+
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="my-2 text-center">
+
+                            <button type="submit" class="btn btn-outline-danger btn-lg"> Eliminar </button>
+
+                            <a asp-controller="Anuncios" asp-action="Index"
+                               class="btn btn-outline-primary mx-3 btn-lg"> Cancelar </a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

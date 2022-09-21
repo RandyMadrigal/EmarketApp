@@ -1,0 +1,190 @@
+﻿@using EmarketApp.Core.Application.ViewModels.Anuncios;
+
+@model SaveAnuncioVm;
+
+@{
+    bool editMode = Model.Id == 0 ? false : true;
+    ViewData["Title"] = "Editar Anuncios";
+}
+
+<div class="container my-5">
+    <div class="row">
+
+        <div class="col-md-3 my-5 text-white">
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="col-md-5 my-5">
+
+            <div class="card bg-dark bg-opacity-25 text-light">
+
+                <div class="card-header bg-dark text-white text-center rounded-end rounded-start">
+                    <h3> @(editMode ? $"Editando: {Model.Name}" : "Crear nuevo anuncio")</h3>
+                </div>
+
+                <div class="card-body">
+
+                    @if (Model.CategoriesList == null || Model.CategoriesList.Count == 0)
+                    {
+
+                        <div class="d-flex justify-content-center">
+                            <h4> No hay Categorias creadas</h4>
+                        </div>
+
+                        <a asp-controller="Anuncios" asp-action="Index"
+                           class="btn btn-danger float-end mx-3">volver atras</a>
+
+                    }
+                    else
+                    {
+                        <form method="post" enctype="multipart/form-data" asp-controller="Anuncios"
+                              asp-action="@(editMode ? "Edit":"Create" )">
+
+                            <div class="mb-3">
+                                <label asp-for="Name" class="form-label">Nombre del articulo: </label>
+                                <input asp-for="Name" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Description" class="form-label">Descripcion: </label>
+                                <textarea asp-for="Description" class="form-control" placeholder="Breve descripcion del articulo"> </textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Price" class="form-label">Precio: </label>
+                                <input asp-for="Price" min="0" step="any" class="form-control">
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-md-6 mb-3">
+                                    <div>
+                                        <label asp-for="File1" class="form-label">Imagen Principal:</label>
+                                        @if (editMode)
+                                        {
+                                            <input required asp-for="File1" class="form-control" />
+                                        }
+                                        else
+                                        {
+                                            <input required asp-for="File1" class="form-control" />
+                                        }
+
+                                    </div>
+
+                                    <div>
+                                        <label asp-for="File2" class="form-label">Imagen:</label>
+                                        @if (editMode)
+                                        {
+                                            <input asp-for="File2" class="form-control" />
+                                        }
+                                        else
+                                        {
+                                            <input asp-for="File2" class="form-control" />
+                                        }
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div>
+                                        <label asp-for="File3" class="form-label">Imagen:</label>
+                                        @if (editMode)
+                                        {
+                                            <input asp-for="File3" class="form-control" />
+                                        }
+                                        else
+                                        {
+                                            <input asp-for="File3" class="form-control" />
+                                        }
+
+                                    </div>
+
+                                    <div>
+                                        <label asp-for="File4" class="form-label">Imagen:</label>
+                                        @if (editMode)
+                                        {
+                                            <input asp-for="File4" class="form-control" />
+                                        }
+                                        else
+                                        {
+                                            <input asp-for="File4" class="form-control" />
+                                        }
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label asp-for="CategoryId" class="form-label">Categoria:</label>
+
+                                <select asp-for="CategoryId" asp-items="@(new SelectList(Model.CategoriesList,"Id","Name"))" class="form-select">
+
+                                    <option value="0"> Seleccione una categoria</option>
+
+                                </select>
+                            </div>
+
+                            <div class="my-2">
+
+                                <a asp-controller="Anuncios" asp-action="Index"
+                                   class="btn btn-danger float-end mx-3">volver atras</a>
+
+                                <button type="submit" class="btn btn-primary float-end">Guardar</button>
+
+                            </div>
+
+                            <input type="hidden" asp-for="Id" />
+
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+
+        @if (editMode)
+        {
+    <div class="col-md-4 my-5">
+
+
+        <div class="col-md-4">
+
+            <div class="card bg-dark bg-opacity-50 animate__animated animate__fadeIn">
+                <img src="@Model.ImgFile1"
+                     class="rounded mx-auto d-block img-size-Home text-white" alt="no hay imagen disponible">
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card bg-dark bg-opacity-50 animate__animated animate__fadeIn">
+                <img src="@Model.ImgFile2"
+                     class="rounded mx-auto d-block img-size-Home text-white" alt="no hay imagen disponible">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card bg-dark bg-opacity-50 animate__animated animate__fadeIn">
+                <img src="@Model.ImgFile3"
+                     class="rounded mx-auto d-block img-size-Home text-white" alt="no hay imagen disponible">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="card bg-dark bg-opacity-50 animate__animated animate__fadeIn">
+                <img src="@Model.ImgFile4"
+                     class="rounded mx-auto d-block img-size-Home text-white" alt="no hay imagen disponible">
+            </div>
+        </div>
+
+
+
+    </div>
+        }
+
+    </div>
+</div>
+

@@ -1,0 +1,17 @@
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.deps.json
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\ref\Emarket.Infrastructure.Persistence.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\Emarket.Infrastructure.Persistence.pdb
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\EmarketApp.Core.Application.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\EmarketApp.Core.Domain.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\EmarketApp.Core.Application.pdb
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\bin\Debug\net5.0\EmarketApp.Core.Domain.pdb
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.csproj.AssemblyReference.cache
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.AssemblyInfoInputs.cache
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.AssemblyInfo.cs
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.csproj.CopyComplete
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\ref\Emarket.Infrastructure.Persistence.dll
+C:\Users\Randy\Desktop\Chan\Programacion 3\EmarketApp\Emarket.Infrastructure.Persistence\obj\Debug\net5.0\Emarket.Infrastructure.Persistence.pdb

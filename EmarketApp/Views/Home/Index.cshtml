@@ -1,0 +1,137 @@
+﻿@using EmarketApp.Core.Application.ViewModels.Anuncios;
+@using EmarketApp.Core.Application.ViewModels.Categories;
+
+@model List<AnuncioVm>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container-fluid my-5 text-white">
+    <div class="row">
+
+        <div class="col-md-12 col-sm-6 mt-5">
+            <div class="card bg-transparent text-white text-center">
+                <div class="card-title">
+                    <h3 class="card-text fw-bold ">HOME</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            
+                <div class="col-md-2 mt-2">
+                    <div class="card text-white bg-light bg-gradient bg-opacity-10 mb-3 border border-dark">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Filtro</h5>
+
+                            <div>
+                                <hr />
+                            </div>
+
+                            <form asp-controller="Home" asp-action="Index" method="post">
+                                <div>
+                                    <label class="form-label">Filtro por "Categoria"</label>
+
+                                        <div class="mb-3">                                         
+
+                                            <select class="form-select" name="CategoryId" id="CategoryId">
+
+                                                <option value="null">Default option 'View all'</option>
+
+                                                @foreach (CategoryVm item in ViewBag.Categories)
+                                                {
+                                                    <option value="@item.Id">@item.Name</option>
+                                                }
+                                            </select>
+
+                                        </div>
+
+                                    <div class="mt-4">
+                                        <button type="submit" class="btn btn-secondary"> Filtrar </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                                <div>
+                                    <hr />
+                                </div>
+
+                                <div>
+                                    <form method="post" , asp-controller="Home" asp-action="Index">
+                                        <label name="CategoryName" class="form-label">Filtro por "Nombre"</label>
+                                        <input type="text" name="CategoryName" class="form-control" placeholder="Default -View all">
+
+                                        <div class="mt-4">
+                                            <button type="submit" class="btn btn-secondary"> Buscar </button>
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+            <div class="col-md-10 mt-2">
+
+                <div class="container-fluid text-white">
+
+                    <div class="row">
+
+                        @if (Model.Count == 0 || Model == null)
+                        {
+                            <h3> Los demas usuarios no han creado anuncios </h3>
+                        }
+                        else
+                        {
+
+                            @foreach (AnuncioVm item in Model)
+                            {
+
+
+                                <div class="col-md-3 mb-3">
+
+                                    <div class="card bg-dark bg-opacity-50 animate__animated animate__fadeIn">
+                                        <img src="@item.ImgFile1"
+                                             class="rounded mx-auto d-block img-size-Home" alt="...">
+
+                                        <div class="card-body">
+
+                                            <h5> @item.Name </h5>
+                                            <p> <strong>Precio:</strong> RD$@item.Price </p>
+                                            <p> <strong>Categoria:</strong>  @item.CategoryName </p>
+                                            <p><strong>Descripcion:</strong> @item.Description </p>
+                                            <p><strong>Fecha de creacion:</strong> @item.CreatedTime </p>                                            
+
+                                        </div>
+
+
+                                        <div class="mb-2">
+
+                                            <a asp-controller="Home" asp-action="Details" asp-route-Id="@item.Id"
+                                               class="btn btn-outline-info btn-sm float-end mx-3"> Ver mas </a>                                           
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            }
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
